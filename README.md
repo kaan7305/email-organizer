@@ -11,6 +11,26 @@ In today's fast-paced world, an overflowing email inbox can be a significant sou
 
 ---
 
+## 🖥️ User Interface
+
+Here are screenshots showcasing the intuitive design and layout of the Email Organizer:
+
+<p align="center">
+  <img src="images/image_1.png" width="600"/>
+  <br><br>
+  <img src="images/image_2.png" width="600"/>
+  <br><br>
+  <img src="images/image_3.png" width="600"/>
+  <br><br>
+  <img src="images/image_4.png" width="600"/>
+  <br><br>
+  <img src="images/image_5.png" width="600"/>
+  <br><br>
+  <img src="images/image_6.png" width="600"/>
+</p>
+
+---
+
 ## 🚀 Features
 - **Seamless Gmail Integration:** Connects with your Google account using OAuth 2.0 to fetch and manage unread emails.
 - **AI-Powered Summarization:** Uses the OpenAI API to generate brief, accurate, and actionable summaries of email content.
