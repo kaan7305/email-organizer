@@ -12,10 +12,10 @@ In today's fast-paced world, an overflowing email inbox can be a significant sou
 ---
 
 ## 🚀 Features
-- **Seamless Gmail Integration:** Securely connects with your Google account using OAuth 2.0 to fetch and manage unread emails.
-- **AI-Powered Summarization:** Utilizes the OpenAI API (GPT-4o-mini) to generate brief, accurate, and actionable summaries of email content.
-- **Customizable Email Classification:** Define your own rules and preferences to train the AI on how to categorize your emails, adapting to your unique workflow.
-- **AI-Assisted Reply Generation:** Craft professional and personalized email replies with intelligent AI assistance, ensuring your communication aligns with your desired tone and style.
+- **Seamless Gmail Integration:** Connects with your Google account using OAuth 2.0 to fetch and manage unread emails.
+- **AI-Powered Summarization:** Uses the OpenAI API to generate brief, accurate, and actionable summaries of email content.
+- **Customizable Email Classification:** Define your own rules and preferences to train the AI on how to categorize your emails.
+- **AI-Assisted Reply Generation:** Craft personalized email replies with intelligent AI assistance, ensuring your communication aligns with your desired tone and style.
 - **One-Click Actions:** Easily mark processed emails as read directly from the dashboard to keep your inbox tidy.
 - **Intuitive User Interface:** A clean, modern, and responsive design built with React and Tailwind CSS for optimal viewing and usability across all devices.
 
@@ -23,14 +23,14 @@ In today's fast-paced world, an overflowing email inbox can be a significant sou
 
 ## 🛠️ Technologies Used
 **Frontend:**
-- React - A JavaScript library for building user interfaces.
-- Tailwind CSS - A utility-first CSS framework for rapid UI development.
+- React
+- Tailwind CSS
 
 **Backend/APIs:**
-- Google Gmail API - For accessing and managing Gmail messages.
-- OpenAI API (GPT-4o-mini) - For AI-powered summarization and reply generation.
-- Firebase Authentication - For secure user authentication via Google Sign-In.
-- Firebase Firestore - A NoSQL cloud database for storing user-specific knowledge bases.
+- Google Gmail API
+- OpenAI API
+- Firebase Authentication
+- Firebase Firestore
 
 ---
 
