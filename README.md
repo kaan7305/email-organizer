@@ -1,20 +1,13 @@
-# 📧 Email Insight
-<!-- Replace this with your actual project logo or a more fitting icon -->
+# 📧 Email Organizer
 
-**Email Insight** is an AI-powered application that revolutionizes the way you manage your inbox by summarizing and categorizing your unread Gmail messages, and assisting you in crafting replies.
-
----
+**Email Organizer** is an AI powered application that helps the way you manage your inbox by summarizing and categorizing your unread Gmail messages, and helping you in crafting replies.
 
 ## ✨ Overview
-In today's fast-paced world, an overflowing email inbox can be a significant source of stress and lost productivity. Sifting through countless messages to find what's important is time-consuming and inefficient.
-
-**Email Insight** leverages the power of cutting-edge Large Language Models (LLMs) to intelligently process your unread emails, transforming your inbox into a streamlined, actionable dashboard. This application empowers you to:
-
+In today's fast-paced world, an overflowing email inbox can be a significant source of stress and lost productivity.
+- **Email Insight** leverages the power of cutting-edge Large Language Models (LLMs) to intelligently process your unread emails.
 - **Get the Gist Instantly:** Receive concise, AI-generated summaries of lengthy emails, allowing you to grasp the core content at a glance.
 - **Intelligent Prioritization:** Automatically classify emails into customizable categories like *Very Important*, *Important*, *Non-Important*, *Promotions*, and *Spam*, ensuring you focus on what truly matters.
 - **Effortless Replies:** Generate smart, context-aware reply drafts based on your specific instructions and personalized writing style, saving you valuable time.
-
-Spend less time sifting through emails and more time focusing on your priorities with **Email Insight**.
 
 ---
 
