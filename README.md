@@ -45,11 +45,11 @@ Follow these steps to set up and run the **Email Insight** application locally.
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/email-summarizer-app.git
+git clone https://github.com/kaan7305/email-summarizer-app.git
 cd email-summarizer-app
 ```
 
-(Replace `YOUR_USERNAME` with your actual GitHub username)
+(Replace `kaan7305` with your actual GitHub username)
 
 ---
 
@@ -115,8 +115,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 ## 📧 Contact
-- **GitHub:** [YOUR_USERNAME](https://github.com/YOUR_USERNAME)
-- **Project Link:** [GitHub Repo](https://github.com/YOUR_USERNAME/email-summarizer-app)
+- **GitHub:** (https://github.com/kaan7305)
+- **Project Link:** (https://github.com/kaan7305/email-organizer)
 
 ---
 
