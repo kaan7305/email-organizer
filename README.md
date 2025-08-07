@@ -45,7 +45,7 @@ Follow these steps to set up and run the **Email Insight** application locally.
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/kaan7305/email-summarizer-app.git
+git clone https://github.com/kaan7305/email-organizer.git
 cd email-summarizer-app
 ```
 
