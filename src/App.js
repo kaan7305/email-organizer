@@ -3,7 +3,7 @@ import { initializeApp } from 'firebase/app';
 import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signOut } from 'firebase/auth';
 import { getFirestore, doc, setDoc, getDoc } from 'firebase/firestore';
 
-// --- Firebase Configuration ---
+
 const firebaseConfig = {
     apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
     authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
@@ -22,8 +22,6 @@ provider.addScope('https://www.googleapis.com/auth/gmail.readonly');
 provider.addScope('https://www.googleapis.com/auth/gmail.modify');
 provider.addScope('https://www.googleapis.com/auth/gmail.send');
 
-
-// --- Helper & UI Components ---
 
 const Icon = ({ path, className = "w-6 h-6" }) => (
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className}>
@@ -51,9 +49,6 @@ const LoadingSkeleton = () => (
     </div>
 );
 
-// --- MODALS ---
-
-// Modal for setting classification preferences
 const ClassificationKnowledgeBaseModal = ({ isOpen, onClose, onSave, initialData }) => {
     const [classificationKB, setClassificationKB] = useState(initialData);
 
@@ -93,7 +88,6 @@ const ClassificationKnowledgeBaseModal = ({ isOpen, onClose, onSave, initialData
     );
 };
 
-// New Modal for setting reply style preferences
 const ReplyKnowledgeBaseModal = ({ isOpen, onClose, onSave, initialData }) => {
     const [replyKB, setReplyKB] = useState(initialData);
 
@@ -141,7 +135,6 @@ const ReplyModal = ({ isOpen, onClose, email, knowledgeBase, accessToken }) => {
     const [isSending, setIsSending] = useState(false);
     const [sendStatus, setSendStatus] = useState(null); // null, 'success', or 'error'
 
-    // Reset state when the modal opens
     useEffect(() => {
         if (isOpen) {
             setInstruction('');
@@ -199,7 +192,6 @@ const ReplyModal = ({ isOpen, onClose, email, knowledgeBase, accessToken }) => {
         setSendStatus(null);
 
         try {
-            // Construct the raw email message in RFC 2822 format.
             const emailLines = [
                 `To: ${email.sender}`,
                 `Subject: Re: ${email.subject}`,
@@ -211,7 +203,6 @@ const ReplyModal = ({ isOpen, onClose, email, knowledgeBase, accessToken }) => {
             ];
             const rawEmail = emailLines.join('\r\n');
 
-            // Base64Url encode the email for the Gmail API.
             const base64EncodedEmail = btoa(unescape(encodeURIComponent(rawEmail)))
                 .replace(/\+/g, '-')
                 .replace(/\//g, '_');
@@ -234,7 +225,7 @@ const ReplyModal = ({ isOpen, onClose, email, knowledgeBase, accessToken }) => {
 
             setSendStatus('success');
             setTimeout(() => {
-                onClose(); // Close modal after a short delay on success
+                onClose(); 
             }, 2000);
 
         } catch (error) {
@@ -291,16 +282,13 @@ const ReplyModal = ({ isOpen, onClose, email, knowledgeBase, accessToken }) => {
     );
 }
 
-
-// --- Main Application Components ---
-
 const Header = ({ user, handleSignIn, handleSignOut }) => (
   <header className="bg-white shadow-sm sticky top-0 z-40">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex justify-between items-center h-16">
         <div className="flex items-center space-x-3">
           <Icon path="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" className="w-8 h-8 text-indigo-600" />
-          <h1 className="text-2xl font-bold text-gray-800">Email Insight</h1>
+          <h1 className="text-2xl font-bold text-gray-800">Email Organizer</h1>
         </div>
         {user ? (
           <div className="flex items-center space-x-4">
@@ -507,7 +495,6 @@ const EmailDashboard = ({ accessToken, knowledgeBase, onOpenClassificationModal,
 
     useEffect(() => {
         if (accessToken) handleRefresh();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [accessToken, knowledgeBase]);
 
     return (
@@ -574,7 +561,7 @@ const LoginPrompt = ({ handleSignIn }) => (
     <div className="text-center py-20 max-w-2xl mx-auto">
         <Icon path="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" className="w-16 h-16 text-indigo-600 mx-auto mb-4" />
         <h2 className="text-4xl font-bold text-gray-800 mb-3">Focus on What Matters</h2>
-        <p className="text-gray-600 mb-8 text-lg">Email Insight uses AI to summarize and categorize your unread emails, so you can clear your inbox faster. Connect your Google account to get started.</p>
+        <p className="text-gray-600 mb-8 text-lg">Email Organizer uses AI to summarize and categorize your unread emails, so you can clear your inbox faster. Connect your Google account to get started.</p>
         <button onClick={handleSignIn} className="flex items-center mx-auto space-x-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 text-lg shadow-lg hover:shadow-xl">
             <Icon path="M12 4.5v15m7.5-7.5h-15" className="w-6 h-6" />
             <span>Connect Your Google Account</span>
