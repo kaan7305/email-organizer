@@ -1,17 +1,17 @@
-# 📧 Email Organizer
+# Email Organizer
 
 **Email Organizer** is an AI powered application that helps the way you manage your inbox by summarizing and categorizing your unread Gmail messages, and helping you in crafting replies.
 
-## ✨ Overview
+## Overview
 In today's fast-paced world, an overflowing email inbox can be a significant source of stress and lost productivity.
-- **Email Insight** leverages the power of cutting-edge Large Language Models (LLMs) to intelligently process your unread emails.
-- **Get the Gist Instantly:** Receive concise, AI-generated summaries of lengthy emails, allowing you to grasp the core content at a glance.
+- **Email Information** leverages the power of LLMs to process your unread emails.
+- **Get the Overview as quick as Possible:** Receive concise, AI-generated summaries of lengthy emails.
 - **Intelligent Prioritization:** Automatically classify emails into customizable categories like *Very Important*, *Important*, *Non-Important*, *Promotions*, and *Spam*, ensuring you focus on what truly matters.
-- **Effortless Replies:** Generate smart, context-aware reply drafts based on your specific instructions and personalized writing style, saving you valuable time.
+- **Effortless Replies:** Generate smart, context-aware according to the context you provide reply drafts based on your specific instructions and personalized writing style, saving you a lot of time.
 
 ---
 
-## 🖥️ User Interface
+## User Interface
 
 Here are screenshots showcasing the intuitive design and layout of the Email Organizer:
 
@@ -31,20 +31,10 @@ Here are screenshots showcasing the intuitive design and layout of the Email Org
 
 ---
 
-## 🚀 Features
-- **Seamless Gmail Integration:** Connects with your Google account using OAuth 2.0 to fetch and manage unread emails.
-- **AI-Powered Summarization:** Uses the OpenAI API to generate brief, accurate, and actionable summaries of email content.
-- **Customizable Email Classification:** Define your own rules and preferences to train the AI on how to categorize your emails.
-- **AI-Assisted Reply Generation:** Craft personalized email replies with intelligent AI assistance, ensuring your communication aligns with your desired tone and style.
-- **One-Click Actions:** Easily mark processed emails as read directly from the dashboard to keep your inbox tidy.
-- **Intuitive User Interface:** A clean, modern, and responsive design built with React and Tailwind CSS for optimal viewing and usability across all devices.
-
----
-
-## 🛠️ Technologies Used
+## Technologies Used
 **Frontend:**
 - React
-- Tailwind CSS
+- CSS
 
 **Backend/APIs:**
 - Google Gmail API
@@ -54,7 +44,7 @@ Here are screenshots showcasing the intuitive design and layout of the Email Org
 
 ---
 
-## ⚙️ Getting Started
+## Getting Started
 Follow these steps to set up and run the **Email Insight** application locally.
 
 ### Prerequisites
@@ -107,7 +97,7 @@ Visit [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 💡 Usage
+## Usage
 1. **Connect Your Google Account** - Authenticate via Google OAuth.
 2. **View Summarized Emails** - AI summaries and categorized emails.
 3. **Personalize AI Classification** - Customize how AI categorizes your emails.
@@ -117,29 +107,7 @@ Visit [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 🤝 Contributing
-We welcome contributions!  
-1. Fork the repository.  
-2. Create a new branch:  
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```  
-3. Commit and push changes.  
-4. Open a Pull Request.
 
----
-
-## 📄 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 📧 Contact
+## Contact
 - **GitHub:** (https://github.com/kaan7305)
 - **Project Link:** (https://github.com/kaan7305/email-organizer)
-
----
-
-## 🙏 Acknowledgements
-- React, Tailwind CSS, Firebase, and OpenAI for amazing tools.
-- Inspired by the constant battle against email overload.
