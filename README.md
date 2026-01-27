@@ -110,4 +110,4 @@ Visit [http://localhost:3000](http://localhost:3000)
 
 ## Contact
 - **GitHub:** (https://github.com/kaan7305)
-- **Project Link:** (https://github.com/kaan7305/email-organizer)
+- **Linkedin:** ([https://github.com/kaan7305/email-organizer](https://www.linkedin.com/in/kaan-eroltu-057b79218/))
